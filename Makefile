@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=-o tictactoe
+CFLAGS=-o tictactoe -lncurses
 SOURCES=$(wildcard src/*.c)
 
 all:
-	$(CC) $(CFLAGS) $(SOURCES)
+	$(CC) $(SOURCES) $(CFLAGS)
